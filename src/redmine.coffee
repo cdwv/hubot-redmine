@@ -265,6 +265,8 @@ formatDate = (dateStamp, fmt = 'mm/dd/yyyy at hh:ii ap') ->
 # returns an array with a single user, or the original array if nothing matched
 resolveUsers = (name, data) ->
     name = name.toLowerCase();
+    console.log data
+    console.log name
 
     # try matching login
     found = data.filter (user) -> user.login.toLowerCase() == name
